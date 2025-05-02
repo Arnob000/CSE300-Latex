@@ -1,0 +1,92 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usetheme{Madrid}
+
+\title{Introduction to Beamer}
+\subtitle{A brief overview}
+\author[MRHS]{Md. Rakibul Hasan sarker}
+\institute[BUET]
+{
+    Department of CSE\\
+    Bangladesh University of Engineering and Technology
+}
+\date{\today}
+\logo{\includegraphics[height=1cm]{download.png}}
+
+\AtBeginSection[]
+{
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{First Section}
+
+\begin{frame}
+\frametitle{Programming Languages}
+Here's a list of programming languages
+\begin{itemize}
+    \item <1-> C
+    \item <2-3> C++
+    \item <3> Java
+    \item <4-> Python
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Graph Related Algorithms}
+In this slide, we list some graph related algorithm\newline \pause
+BFS\newline \pause
+DFS\newline \pause
+Dijkstra
+\end{frame}
+
+\section{Second Section}
+
+\begin{frame}
+\frametitle{Highlighting Text}
+Ths is a \alert{highlighted} text.
+
+\begin{block}{Info about block}
+Same style with theme.
+\end{block}
+
+\begin{alertblock}{Info about alertblock}
+Contrasts the global style;  
+\end{alertblock}
+\begin{example}
+less contrasting than alertblock
+\end{example}
+\end{frame}
+
+\begin{frame}
+\frametitle{Two column example}
+\begin{columns}
+    \column{0.5\textwidth}
+    This is a text in first column.
+    \begin{itemize}
+        \item A
+        \item B
+    \end{itemize}
+    \column{0.5\textwidth}
+    This is a text in second column.
+    \begin{itemize}
+        \item A
+        \item B
+    \end{itemize}
+\end{columns}
+    
+\end{frame}
+ 
+
+\end{document}

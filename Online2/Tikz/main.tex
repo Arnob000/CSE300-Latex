@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\begin{document}
+
+\begin{tikzpicture}
+    % \draw (0,0) -- (5,0) -- (5,5) -- (0,5) -- cycle;
+\end{tikzpicture} 
+
+\begin{tikzpicture}
+    % \draw[gray] (0,0) grid (4,4);
+    % \draw[->] (0,0) -- (5,0) node[below] {$x$};
+    % \draw[->] (0,0) -- (0,5) node[left] {$y$};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (-1,-1) grid (6,6);
+    % \draw[red] (0,0) -- (2,2) -- (4,0) -- (5,5);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (0,0) rectangle (4,4);
+    % \draw (0,0) parabola (4,4);
+     % \draw (0,0) circle (3cm);
+    % \draw (0,0) ellipse (3cm and 1cm);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    % \draw (0,0) .. controls (1,4) and (2,-4) .. (4,0);
+    % \draw (-2,-2) grid (5,5);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+    % \draw (0,0) to [out=45, in=225] (4,0);
+    % \draw (-2,-2) grid (5,5);
+\end{tikzpicture}
+
+%y = x^2
+\begin{tikzpicture}
+    % \draw[->] (0,0) -- (5,0);
+    % \draw[->] (0,0) -- (0,5);
+    % \draw[domain=-2:2] plot (\x, {\x*\x});
+ \end{tikzpicture}
+
+ \begin{tikzpicture}
+     % \draw (0,0) rectangle (4,4);
+     % \node at (-0.1,-0.1) {O};
+     % \node at (4.1, -0.1) {A};
+     % \node at (4.1, 4.1) {B};
+     % \node at (-.1, 4.1) {C};
+ \end{tikzpicture}
+
+\begin{tikzpicture}
+     % \draw (0,0) rectangle (4,4);
+     % \node[below left] at (0,0) {O};
+     % \node[below right] at (4, 0) {A};
+     % \node[above right] at (4, 4) {B};
+     % \node[above left] at (0, 4) {C};
+ \end{tikzpicture}
+
+ \begin{tikzpicture}
+     % \foreach \x in {1,...,6}
+     % {
+     %    \draw (\x*2,0) circle [radius=1];
+     % }
+ \end{tikzpicture}
+
+ \begin{tikzpicture}
+     % \foreach \x in {1,2,3,4}
+     % {
+     %    \foreach \y in {1,2,3,4}
+     %    {
+     %        \draw (\x,\y) circle [radius=0.3];
+     %    }
+     % }
+ \end{tikzpicture}
+
+ \begin{tikzpicture}
+     % \foreach \i\j in {1/A,2/B,3/C}
+     % {
+     %    \node[draw,shape=circle] at (\i,0) {\j};
+     % }
+ \end{tikzpicture}
+
+\begin{tikzpicture}
+    % \node (A) at (0,0) [thik, blue, circle, fill=blue!20]{A};
+    % \node (B) at (5,0) [thik, blue, rectangle, fill=green!20]{B};
+    % \draw[->] (A)--(B);
+\end{tikzpicture}
+
+
+\tikzstyle{roundnode}=[circle, draw=green!60, fill=green!5, very thick, minimum size=7mm]
+\tikzstyle{squarednode}=[rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm]
+\begin{tikzpicture}
+\node[squarednode] (A) {2};
+\node[roundnode] (B) [above=of A] {1};
+\node[squarednode] (C) [right=of A] {3};
+\node[roundnode] (D) [below=of A] {4};
+
+\draw[->] (B.south) -- (A.north);
+\draw[->] (A.east) -- (C.west);
+\draw[->] (C.south) .. controls +(down:7mm) and +(right:7mm) .. (D.east);
+    
+\end{tikzpicture}
+ 
+ 
+\end{document}
